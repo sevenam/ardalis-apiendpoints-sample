@@ -1,11 +1,13 @@
 ﻿using ardalis_apiendpoints_sample.Models;
 using ardalis_apiendpoints_sample.Services;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace ardalis_apiendpoints_sample.Controllers
 {
   [ApiController]
   [Route("stuff")]
+  [SwaggerTag(description: "Classic controller stuff")]
   public class StuffController : ControllerBase
   {
     private readonly IStuffService stuffService;

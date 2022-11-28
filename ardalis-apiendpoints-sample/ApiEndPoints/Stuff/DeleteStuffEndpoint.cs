@@ -2,6 +2,7 @@
 using ardalis_apiendpoints_sample.Models;
 using ardalis_apiendpoints_sample.Services;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace ardalis_apiendpoints_sample.ApiEndPoints.Stuff
 {
@@ -15,6 +16,7 @@ namespace ardalis_apiendpoints_sample.ApiEndPoints.Stuff
     }
 
     [HttpDelete("stuffystuff/{id}")]
+    [SwaggerOperation(Summary = "Deletes stuff", Description = "ApiEndPoints - Delete stuff", OperationId = "Stuff.DeleteStuff", Tags = new[] { "StuffApiEndpoints" })]
     public override async Task<ActionResult<bool>> HandleAsync(Guid id, CancellationToken cancellationToken = default)
     {
       var result = stuffService.RemoveStuff(id);
