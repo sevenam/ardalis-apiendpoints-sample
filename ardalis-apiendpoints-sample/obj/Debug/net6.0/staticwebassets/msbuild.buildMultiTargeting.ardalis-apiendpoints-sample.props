@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\ardalis-apiendpoints-sample.props" />
-</Project>
