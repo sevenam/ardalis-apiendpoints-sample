@@ -30,3 +30,7 @@ C:\code\ardalis-apiendpoints-sample\ardalis-apiendpoints-sample\obj\Debug\net6.0
 C:\code\ardalis-apiendpoints-sample\ardalis-apiendpoints-sample\obj\Debug\net6.0\ardalis-apiendpoints-sample.pdb
 C:\code\ardalis-apiendpoints-sample\ardalis-apiendpoints-sample\obj\Debug\net6.0\ardalis-apiendpoints-sample.genruntimeconfig.cache
 C:\code\ardalis-apiendpoints-sample\ardalis-apiendpoints-sample\obj\Debug\net6.0\ref\ardalis-apiendpoints-sample.dll
+C:\code\ardalis-apiendpoints-sample\ardalis-apiendpoints-sample\bin\Debug\net6.0\Ardalis.ApiEndpoints.dll
+C:\code\ardalis-apiendpoints-sample\ardalis-apiendpoints-sample\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\code\ardalis-apiendpoints-sample\ardalis-apiendpoints-sample\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\code\ardalis-apiendpoints-sample\ardalis-apiendpoints-sample\bin\Debug\net6.0\Newtonsoft.Json.dll
