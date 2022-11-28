@@ -15,7 +15,7 @@ namespace ardalis_apiendpoints_sample.Controllers
       this.stuffService = stuffService;
     }
 
-    [HttpGet]
+    [HttpGet("stuff")]
     public IActionResult GetAllTheStuff()
     {
       var allofthestuff = stuffService.GetAllTheStuff();
@@ -30,7 +30,7 @@ namespace ardalis_apiendpoints_sample.Controllers
     }
 
     [HttpPost]
-    public IActionResult CreateStuff([FromBody] Stuff stuff)
+    public IActionResult CreateStuff([FromBody] StuffyStuff stuff)
     {
       var result = stuffService.AddStuff(stuff);
       return Ok(result);

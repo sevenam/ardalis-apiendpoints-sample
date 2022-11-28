@@ -4,25 +4,25 @@ namespace ardalis_apiendpoints_sample.Services
 {
   public class StuffService : IStuffService
   {
-    private List<Stuff> listOfStuff;
+    private List<StuffyStuff> listOfStuff;
 
     public StuffService()
     {
-      listOfStuff = new List<Stuff>();
+      listOfStuff = new List<StuffyStuff>();
     }
 
-    public List<Stuff> GetAllTheStuff()
+    public List<StuffyStuff> GetAllTheStuff()
     {
       return listOfStuff;
     }
 
-    public Stuff GetStuffById(Guid id)
+    public StuffyStuff GetStuffById(Guid id)
     {
       var singlestuff = listOfStuff.SingleOrDefault(x => x.Id.Equals(id));
       return singlestuff;
     }
 
-    public bool AddStuff(Stuff stuff)
+    public bool AddStuff(StuffyStuff stuff)
     {
       listOfStuff.Add(stuff);
       return true;
