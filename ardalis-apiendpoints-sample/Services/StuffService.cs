@@ -4,7 +4,7 @@ namespace ardalis_apiendpoints_sample.Services
 {
   public class StuffService : IStuffService
   {
-    private List<Stuff> listOfStuff;
+    private readonly List<Stuff> listOfStuff;
 
     public StuffService()
     {
