@@ -4,9 +4,9 @@ using ardalis_apiendpoints_sample.Services;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 
-namespace ardalis_apiendpoints_sample.ApiEndPoints.Stuff
+namespace ardalis_apiendpoints_sample.ApiEndPoints.StuffEndpoints
 {
-  public class AddStuffEndpoint : EndpointBaseAsync.WithRequest<StuffyStuff>.WithActionResult<bool>
+  public class AddStuffEndpoint : EndpointBaseAsync.WithRequest<Stuff>.WithActionResult<bool>
   {
     private readonly IStuffService stuffService;
 
@@ -17,7 +17,7 @@ namespace ardalis_apiendpoints_sample.ApiEndPoints.Stuff
 
     [HttpPost("stuffystuff/")]
     [SwaggerOperation(Summary = "Adds stuff", Description = "ApiEndPoints - Add stuff", OperationId = "Stuff.AddStuff", Tags = new[] {"StuffApiEndpoints"} )]
-    public override async Task<ActionResult<bool>> HandleAsync(StuffyStuff stuff, CancellationToken cancellationToken = default)
+    public override async Task<ActionResult<bool>> HandleAsync(Stuff stuff, CancellationToken cancellationToken = default)
     {
       var result = stuffService.AddStuff(stuff);
       return Ok(result);

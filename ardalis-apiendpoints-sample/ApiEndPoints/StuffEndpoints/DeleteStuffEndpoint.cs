@@ -4,7 +4,7 @@ using ardalis_apiendpoints_sample.Services;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 
-namespace ardalis_apiendpoints_sample.ApiEndPoints.Stuff
+namespace ardalis_apiendpoints_sample.ApiEndPoints.StuffEndpoints
 {
   public class DeleteStuffEndpoint : EndpointBaseAsync.WithRequest<Guid>.WithActionResult<bool>
   {

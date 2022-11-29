@@ -4,9 +4,9 @@ using ardalis_apiendpoints_sample.Services;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 
-namespace ardalis_apiendpoints_sample.ApiEndPoints.Stuff
+namespace ardalis_apiendpoints_sample.ApiEndPoints.StuffEndpoints
 {
-  public class GetStuffByIdEndpoint : EndpointBaseAsync.WithRequest<Guid>.WithActionResult<StuffyStuff>
+  public class GetStuffByIdEndpoint : EndpointBaseAsync.WithRequest<Guid>.WithActionResult<Stuff>
   {
     private readonly IStuffService stuffService;
 
@@ -17,7 +17,7 @@ namespace ardalis_apiendpoints_sample.ApiEndPoints.Stuff
 
     [HttpGet("stuffystuff/{id}")]
     [SwaggerOperation(Summary = "Gets stuff by id", Description = "ApiEndPoints - Get stuff by id", OperationId = "Stuff.GetStuffById", Tags = new[] { "StuffApiEndpoints" })]
-    public override async Task<ActionResult<StuffyStuff>> HandleAsync(Guid id, CancellationToken cancellationToken = default)
+    public override async Task<ActionResult<Stuff>> HandleAsync(Guid id, CancellationToken cancellationToken = default)
     {
       var stuff = stuffService.GetStuffById(id);
       return Ok(stuff);

@@ -32,7 +32,7 @@ namespace ardalis_apiendpoints_sample.Controllers
     }
 
     [HttpPost]
-    public IActionResult CreateStuff([FromBody] StuffyStuff stuff)
+    public IActionResult CreateStuff([FromBody] Stuff stuff)
     {
       var result = stuffService.AddStuff(stuff);
       return Ok(result);
